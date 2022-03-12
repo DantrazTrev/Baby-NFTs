@@ -37,8 +37,8 @@
       ]
     },
     "/Users/dantraztrev/web3degen/contracts/Counter.sol": {
-      "lastModificationDate": 1647085551692,
-      "contentHash": "ab31dfdc4a6a50289049064b4ef0b8c5",
+      "lastModificationDate": 1647117481822,
+      "contentHash": "f0e588673fe913e6f2814bedfc3bf687",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.10",
