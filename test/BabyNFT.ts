@@ -14,7 +14,8 @@ describe("Baby NFTS",function(){
     before(async function () {
         uwu= await NFTsBirth();
     })
-    it("Fails with char",
+
+      it("Create charecter",
     async function () {
         let e;
         try{
@@ -29,4 +30,25 @@ describe("Baby NFTS",function(){
         expect(e.message.includes("Send more money , bitch")).to.equal(true)
         
     })
+
+    it("Fails with char with less money",
+    async function () {
+        let e;
+        try{
+            await uwu.createChar(0,{
+                value:ethers.utils.parseEther("0.049999")
+            })
+
+        }
+        catch(err){
+            e=err
+        }
+        expect(e.message.includes("Send more money , bitch")).to.equal(true)
+        
+    })
+    it("Return No NFTs",async function () {
+       expect(await uwu.getChars()).to.deep.equal([]) 
+        
+    })
+    it("Should create ")
    })

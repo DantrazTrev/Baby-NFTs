@@ -144,8 +144,8 @@
       ]
     },
     "/Users/dantraztrev/web3degen/contracts/BabyNFT.sol": {
-      "lastModificationDate": 1647121047802,
-      "contentHash": "d4accfe2c0b5d5025640be0dde2c3d47",
+      "lastModificationDate": 1647122366349,
+      "contentHash": "231fa2bf24397935ef3b8f8e74fc7705",
       "sourceName": "contracts/BabyNFT.sol",
       "solcConfig": {
         "version": "0.8.10",
