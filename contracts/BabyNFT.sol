@@ -21,28 +21,28 @@ contract BabyNFT {
         return addresstoChar[msg.sender];
     }
 
-    function getStrength(uint256 char) public pure returns (uint256) {
-        return (char >> 2) & 0x1F;
+    function getCoolness(uint256 char) public pure returns (uint32) {
+        return uint32((char >> 2) & 0x1F);
     }
 
-    function getGreed(uint256 char) public pure returns (uint256) {
-        return (char >> 7) & 0x1F;
+    function getGreed(uint256 char) public pure returns (uint32) {
+        return uint32((char >> 7) & 0x1F);
     }
 
-    function getSexAppeal(uint256 char) public pure returns (uint256) {
-        return (char >> 12) & 0x1F;
+    function getSexAppeal(uint256 char) public pure returns (uint32) {
+        return uint32((char >> 12) & 0x1F);
     }
 
-    function getWeirdness(uint256 char) public pure returns (uint256) {
-        return (char >> 17) & 0x1F;
+    function getWeirdness(uint256 char) public pure returns (uint32) {
+        return uint32((char >> 17) & 0x1F);
     }
 
-    function getUmfh(uint256 char) public pure returns (uint256) {
-        return (char >> 22) & 0x1F;
+    function getUmfh(uint256 char) public pure returns (uint32) {
+        return uint32((char >> 22) & 0x1F);
     }
 
     function createChar(Class class) public payable {
-        require(msg.value >= 0.05 ether, "Send more money , bitch");
+        require(msg.value >= 0.69 ether, "Send more money , bitch");
         uint256[] memory stats = new uint256[](5);
         stats[0] = 2;
         stats[1] = 7;
@@ -60,7 +60,7 @@ contract BabyNFT {
             char |= value << stats[pos];
             len--;
             stats[pos] = stats[len];
-        } while (len >= 0);
+        } while (len > 0);
 
         addresstoChar[msg.sender].push(char);
     }

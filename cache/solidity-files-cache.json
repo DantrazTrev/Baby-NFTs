@@ -144,8 +144,8 @@
       ]
     },
     "/Users/dantraztrev/web3degen/contracts/BabyNFT.sol": {
-      "lastModificationDate": 1647122366349,
-      "contentHash": "231fa2bf24397935ef3b8f8e74fc7705",
+      "lastModificationDate": 1647260904248,
+      "contentHash": "23dbb3d0ba399769aac0965e9fcb338e",
       "sourceName": "contracts/BabyNFT.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -176,6 +176,43 @@
       ],
       "artifacts": [
         "BabyNFT"
+      ]
+    },
+    "/Users/dantraztrev/web3degen/contracts/TestBNFT.sol": {
+      "lastModificationDate": 1647185961256,
+      "contentHash": "8b6852d8a5516b3fb404899c174d9d17",
+      "sourceName": "contracts/TestBNFT.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BabyNFT.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TestBabyNFT"
       ]
     }
   }
