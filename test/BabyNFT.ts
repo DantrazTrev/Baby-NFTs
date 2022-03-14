@@ -68,7 +68,7 @@ describe("Baby NFTS",function(){
      const uwus= (await uwu.getChars())[0]
      console.log(uwus);
     expect(await uwu.getUmfh(uwus)).to.equal(16)
-     expect(await uwu.getGreed(uwus)).to.equal(10)
+     expect(await uwu.getGreed(uwus)).to.equal(2)
     expect(await uwu.getCoolness(uwus)).to.equal(6)
     
    })
