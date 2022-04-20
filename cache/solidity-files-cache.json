@@ -144,8 +144,8 @@
       ]
     },
     "/Users/dantraztrev/web3degen/contracts/BabyNFT.sol": {
-      "lastModificationDate": 1647260904248,
-      "contentHash": "23dbb3d0ba399769aac0965e9fcb338e",
+      "lastModificationDate": 1647976138372,
+      "contentHash": "e348d04cc907e4c9b6a8669e2e6da6c6",
       "sourceName": "contracts/BabyNFT.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -213,6 +213,43 @@
       ],
       "artifacts": [
         "TestBabyNFT"
+      ]
+    },
+    "/Users/dantraztrev/web3degen/contracts/Fallback.sol": {
+      "lastModificationDate": 1647262816239,
+      "contentHash": "d3496155f20fae77c763bf881d401835",
+      "sourceName": "contracts/Fallback.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Fallback"
       ]
     }
   }

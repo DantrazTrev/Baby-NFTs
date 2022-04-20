@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract BabyNFT {
-    enum Class {
+    enum Peeps {
         materialgwrol,
         fuckboi,
         golddigger
@@ -41,7 +41,7 @@ contract BabyNFT {
         return uint32((char >> 22) & 0x1F);
     }
 
-    function createChar(Class class) public payable {
+    function createChar(Peeps class) public payable {
         require(msg.value >= 0.69 ether, "Send more money , bitch");
         uint256[] memory stats = new uint256[](5);
         stats[0] = 2;
