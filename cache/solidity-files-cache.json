@@ -216,8 +216,8 @@
       ]
     },
     "/Users/dantraztrev/web3degen/contracts/Fallback.sol": {
-      "lastModificationDate": 1647262816239,
-      "contentHash": "d3496155f20fae77c763bf881d401835",
+      "lastModificationDate": 1650563933790,
+      "contentHash": "2638856596f0b3b2de891c534391c262",
       "sourceName": "contracts/Fallback.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -249,7 +249,46 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "Fallback"
+        "Fallback",
+        "IFallback"
+      ]
+    },
+    "/Users/dantraztrev/web3degen/contracts/X.sol": {
+      "lastModificationDate": 1650565950916,
+      "contentHash": "e4c1d553ecad00bd3ddf623dd147b59e",
+      "sourceName": "contracts/X.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "X",
+        "Y"
       ]
     }
   }

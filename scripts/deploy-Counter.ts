@@ -12,6 +12,7 @@ async function deploy(){
 //@ts-ignore
 async function count(counter){
 await counter.count() ;
+
 console.log("From Script count",await counter.readCount())
 
 }
