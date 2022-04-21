@@ -25,7 +25,7 @@ contract Y {
 
     function setX(uint256 _x) public {
         x = _x;
-        X(ContractX).setX(_x + 1);
+        ContractX.delegatecall("setA(uint256",_x+1)
     }
 
     function getX() public view returns (uint256) {
