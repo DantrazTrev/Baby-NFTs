@@ -26,7 +26,7 @@ describe("Baby NFTS",function(){
         let e;
         try{
            
-            await uwu.createChar(0,{
+            await uwu.createChar(1,{
                 value:ethers.utils.parseEther(".0069")
             })
 
