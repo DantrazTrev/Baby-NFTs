@@ -42,7 +42,10 @@ contract BabyNFT {
     }
 
     function createChar(Peeps class) public payable {
-        require(msg.value >= 0.69 ether, "Send more money , bitch");
+        require(msg.value < 0.05 ether, "Send more money , bitch");
+        if (uint256(class) == 1) {
+            require(msg.value < 0.69 ether, "Really Material Gwrol?");
+        }
         uint256[] memory stats = new uint256[](5);
         stats[0] = 2;
         stats[1] = 7;
